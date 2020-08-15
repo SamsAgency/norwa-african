@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #F7FAFF;
+  width: 144rem; }
+
+.heading {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 143.3%;
+  /* or 103px */
+  letter-spacing: -0.075em;
+  color: #030714; }
