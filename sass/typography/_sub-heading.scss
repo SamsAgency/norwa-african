@@ -1,0 +1,21 @@
+.sub-heading {
+    width: 47.8rem;
+    height: 14.9rem;
+    font-family: $font-fam-sec;
+    font-style: normal;
+    font-weight: 300;
+    font-size: $font-small;
+    line-height: 5.3rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.05em;
+
+    color: $color-dark;
+
+    @include respond(phone) {
+        font-size: $font-small-phone;
+        height: calc(14.9rem * 1.5);
+        width: calc(47.8rem * 1.5);
+        line-height: 5.9rem;
+    }
+}

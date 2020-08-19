@@ -1,0 +1,5 @@
+.nav-icon {
+    &__icon:not(:last-of-type) {
+        margin-right: 7rem;
+    }
+}

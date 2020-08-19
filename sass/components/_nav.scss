@@ -1,0 +1,30 @@
+.nav {
+    position: absolute;
+    width: 119.8rem;
+    height: 10.2rem;
+    top: 7.2rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto 12.2rem;
+
+    &__logo {
+        display: flex;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 42rem;
+
+        @include respond(phone) {
+            display: none;
+        }
+    }
+
+    &__btn {
+        @include respond(phone) {
+            display: none;
+        }
+    }
+}

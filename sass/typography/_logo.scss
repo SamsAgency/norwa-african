@@ -1,0 +1,11 @@
+.heading-logo {
+    font-family: $font-fam-pri;
+    font-style: normal;
+    font-weight: bold;
+    font-size: $font-meduim;
+    line-height: 55px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.05em;
+    @include textLinearGradient;
+}

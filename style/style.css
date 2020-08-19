@@ -1,3 +1,16 @@
+/*
+Media Query Manager
+
+Breakpoints : Screens         : nickname
+
+0-600 px    : phone           : phone
+600-900 px  : tablet-portrait : tab-port
+900-1200 px : tablet-landscape: tab-land
+1200-1800 px: normal becoz its desktop first method
+1800px +    : Big Monitor     : big-screen
+
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -10,14 +23,193 @@ html {
 
 body {
   background-color: #F7FAFF;
-  width: 144rem; }
+  width: 144rem;
+  position: relative;
+  margin: 0 auto; }
+  @media (max-width: 37.5em) {
+    body {
+      width: 100%; } }
+
+.body-image {
+  position: absolute;
+  width: 99.09rem;
+  height: 133.544rem;
+  right: -7.2rem;
+  top: 0;
+  z-index: -1; }
+  @media (max-width: 37.5em) {
+    .body-image {
+      display: none; } }
+
+/*
+@include respond(big-screen) {
+    //18/16px * 100 =
+    font-size: 112.5%;
+  }
+*/
+.margin-R10 {
+  margin-right: 10rem; }
+
+.margin-T5 {
+  margin-top: 5rem; }
+
+.margin-T10 {
+  margin-top: 10rem; }
+
+.line-spacing {
+  letter-spacing: -0.1em; }
+
+.link:link, .link:active {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 4.5rem;
+  line-height: 53px;
+  letter-spacing: -0.05em;
+  text-decoration: none;
+  color: #000000;
+  transition: 0.5s ease-in-out; }
+
+.link:hover, .link:visited {
+  border-bottom: 2px solid #428EDF; }
+
+.btn-primary {
+  background: #428EDF;
+  border-radius: 20px;
+  width: 23rem;
+  height: 10.2rem;
+  border: none; }
+  .btn-primary__link:link, .btn-primary__link:active {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 4.5rem;
+    line-height: 53px;
+    letter-spacing: -0.05em;
+    text-decoration: none;
+    color: #ffffffff; }
+
+.btn-secondary {
+  background: #ffffffff;
+  border-radius: 20px;
+  width: 23rem;
+  height: 10.2rem;
+  border: 2px solid #428EDF; }
+  .btn-secondary__link:link, .btn-secondary__link:active {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 4.5rem;
+    line-height: 53px;
+    letter-spacing: -0.05em;
+    text-decoration: none;
+    color: #428EDF; }
+
+.nav-icon__icon:not(:last-of-type) {
+  margin-right: 7rem; }
+
+.nav {
+  position: absolute;
+  width: 119.8rem;
+  height: 10.2rem;
+  top: 7.2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: auto 12.2rem; }
+  .nav__logo {
+    display: flex; }
+  .nav__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 42rem; }
+    @media (max-width: 37.5em) {
+      .nav__link {
+        display: none; } }
+  @media (max-width: 37.5em) {
+    .nav__btn {
+      display: none; } }
+
+.hero-sec {
+  position: absolute;
+  width: 120.8rem;
+  height: 69.8rem;
+  top: 31.9rem;
+  margin: auto 12.2rem;
+  display: flex;
+  justify-content: space-between; }
+  @media (max-width: 37.5em) {
+    .hero-sec {
+      display: flex;
+      flex-direction: column;
+      width: calc((100% * 2.5));
+      height: 117.6rem; } }
+  .hero-sec__message {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .hero-sec__icon {
+    display: flex;
+    padding-top: 58.2rem; }
+    @media (max-width: 37.5em) {
+      .hero-sec__icon {
+        padding: 0; } }
+
+/*
+ @include respond() {
+    }
+*/
+.message__btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  @media (max-width: 37.5em) {
+    .message__btn {
+      justify-content: initial; } }
 
 .heading {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 72px;
+  font-size: 7.2rem;
   line-height: 143.3%;
-  /* or 103px */
-  letter-spacing: -0.075em;
-  color: #030714; }
+  color: #000000; }
+  @media (max-width: 37.5em) {
+    .heading {
+      font-size: 10.8rem; } }
+
+/*
+ @include respond() {
+    }
+*/
+.heading-logo {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5.4rem;
+  line-height: 55px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.05em;
+  background-image: linear-gradient(to bottom, #F7FAFF, #0057B7);
+  -webkit-background-clip: text;
+  color: transparent; }
+
+.sub-heading {
+  width: 47.8rem;
+  height: 14.9rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 4.5rem;
+  line-height: 5.3rem;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.05em;
+  color: #000000; }
+  @media (max-width: 37.5em) {
+    .sub-heading {
+      font-size: 6.75rem;
+      height: calc(14.9rem * 1.5);
+      width: calc(47.8rem * 1.5);
+      line-height: 5.9rem; } }

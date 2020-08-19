@@ -1,0 +1,36 @@
+.hero-sec {
+  position: absolute;
+  width: 120.8rem;
+  height: 69.8rem;
+  top: 31.9rem;
+  margin: auto 12.2rem;
+  display: flex;
+  justify-content: space-between;
+
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% * 2.5));
+    height: 117.6rem;
+  }
+
+  &__message {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    display: flex;
+    padding-top: 58.2rem;
+
+    @include respond(phone) {
+      padding: 0;
+    }
+  }
+}
+
+/*
+ @include respond() {
+    }
+*/

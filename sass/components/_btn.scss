@@ -1,0 +1,70 @@
+//button links
+.link {
+
+    &:link,
+    &:active {
+        font-family: $font-fam-sec;
+        font-style: normal;
+        font-weight: 300;
+        font-size: $font-small;
+        line-height: 53px;
+        letter-spacing: -0.05em;
+        text-decoration: none;
+
+        color: $color-dark;
+        transition: 0.5s ease-in-out;
+    }
+
+    &:hover,
+    &:visited {
+        border-bottom: 2px solid $color-primary-dark;
+    }
+}
+
+.btn-primary {
+    background: $color-primary-dark;
+    border-radius: 20px;
+    width: 23rem;
+    height: 10.2rem;
+    border: none;
+
+    &__link {
+
+        &:link,
+        &:active {
+            font-family: $font-fam-sec;
+            font-style: normal;
+            font-weight: 300;
+            font-size: $font-small;
+            line-height: 53px;
+            letter-spacing: -0.05em;
+            text-decoration: none;
+
+            color: $color-white;
+        }
+    }
+}
+
+.btn-secondary {
+    background: $color-white;
+    border-radius: 20px;
+    width: 23rem;
+    height: 10.2rem;
+    border: 2px solid $color-primary-dark;
+
+    &__link {
+
+        &:link,
+        &:active {
+            font-family: $font-fam-sec;
+            font-style: normal;
+            font-weight: 300;
+            font-size: $font-small;
+            line-height: 53px;
+            letter-spacing: -0.05em;
+            text-decoration: none;
+
+            color: $color-primary-dark;
+        }
+    }
+}

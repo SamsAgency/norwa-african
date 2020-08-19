@@ -1,13 +1,18 @@
 .heading {
-    font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 72px;
-line-height: 143.3%;
-/* or 103px */
+    font-family: $font-fam-pri;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $font-big;
+    line-height: 143.3%;
 
-letter-spacing: -0.075em;
+    color: $color-dark;
 
-    color: #030714;
-
+    @include respond(phone) {
+        font-size: $font-big-phone;
+    }
 }
+
+/*
+ @include respond() {
+    }
+*/

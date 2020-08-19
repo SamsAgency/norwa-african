@@ -13,4 +13,30 @@ html {
 body {
     background-color: $color-primary-light;
     width: 144rem;
+    position: relative;
+    margin: 0 auto;
+
+    @include respond(phone) {
+        width: 100%;
+    }
 }
+
+.body-image {
+    position: absolute;
+    width: 99.09rem;
+    height: 133.544rem;
+    right: -7.2rem;
+    top: 0;
+    z-index: -1;
+
+    @include respond(phone) {
+        display: none;
+    }
+}
+
+/*
+@include respond(big-screen) {
+    //18/16px * 100 =
+    font-size: 112.5%;
+  }
+*/
