@@ -22,15 +22,19 @@
 
   &__icon {
     display: flex;
+    align-items: baseline;
     padding-top: 58.2rem;
 
     @include respond(phone) {
       padding: 0;
+      margin-top: 5rem;
     }
   }
 }
 
-/*
- @include respond() {
-    }
-*/
+.about-us-sec {
+  position: absolute;
+  margin-left: -6rem;
+  top: 111.8rem;
+  width: 109%;
+}

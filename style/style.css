@@ -57,7 +57,7 @@ body {
   margin-top: 10rem; }
 
 .line-spacing {
-  letter-spacing: -0.1em; }
+  letter-spacing: -0.13em; }
 
 .link:link, .link:active {
   font-family: "Roboto", sans-serif;
@@ -150,15 +150,19 @@ body {
     justify-content: space-between; }
   .hero-sec__icon {
     display: flex;
+    align-items: baseline;
     padding-top: 58.2rem; }
     @media (max-width: 37.5em) {
       .hero-sec__icon {
-        padding: 0; } }
+        padding: 0;
+        margin-top: 5rem; } }
 
-/*
- @include respond() {
-    }
-*/
+.about-us-sec {
+  position: absolute;
+  margin-left: -6rem;
+  top: 111.8rem;
+  width: 109%; }
+
 .message__btn {
   display: flex;
   flex-direction: row;
