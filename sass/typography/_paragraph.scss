@@ -1,0 +1,14 @@
+.paragraph {
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: $font-smallest;
+    line-height: 90%;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.05em;
+
+    color: $color-dark;
+}

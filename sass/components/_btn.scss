@@ -68,3 +68,16 @@
         }
     }
 }
+
+.btn-dropDown {
+    background: transparent;
+    border: none;
+}
+
+.btn-dropDown,
+.btn-primary,
+.btn-secondary {
+    &:focus {
+        outline: none;
+    }
+}

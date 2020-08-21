@@ -11,9 +11,29 @@
     }
 }
 
-.svg-about-us {
-    position: absolute;
-    margin-left: -6.75rem;
-    width: 109%;
-    z-index: -50;
+.content {
+
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 2.4rem;
+        }
+
+        &--h2 {
+            margin-bottom: 1.2rem;
+        }
+
+        &--p {
+            line-height: 100%;
+        }
+
+        &--text {
+            font-weight: 200;
+            font-family: $font-fam-sec;
+            font-size: $font-smallest;
+        }
+    }
+
 }
+
+/**/

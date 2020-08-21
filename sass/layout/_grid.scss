@@ -35,6 +35,17 @@
 .about-us-sec {
   position: absolute;
   top: 111.8rem;
-  width: 100%;
-  position: relative;
+  width: 109.75%;
+  margin-left: -6.75rem;
+  height: -webkit-fill-available;
+  z-index: -50;
+
+  background-image: url("svg/waves-rec-1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 37.6rem 12.1rem 194.87rem 20.1rem;
+
+  &:not(:last-of-type) {
+    margin-bottom: 6rem;
+  }
 }

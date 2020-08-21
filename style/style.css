@@ -33,7 +33,7 @@ body {
 .body-image {
   position: absolute;
   width: 99.09rem;
-  height: 133.544rem;
+  height: 139rem;
   right: -7.2rem;
   top: 0;
   z-index: -1; }
@@ -105,6 +105,34 @@ body {
     text-decoration: none;
     color: #428EDF; }
 
+.btn-dropDown {
+  background: transparent;
+  border: none; }
+
+.btn-dropDown:focus,
+.btn-primary:focus,
+.btn-secondary:focus {
+  outline: none; }
+
+.bsDropDown__header,
+.mvDropDown__header,
+.cvDropDown__header,
+.wdDropDown__header,
+.osDropDown__header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 5px solid #000000;
+  padding-bottom: 2.3rem;
+  margin-bottom: 3.9rem; }
+
+.bsDropDown__content,
+.mvDropDown__content,
+.cvDropDown__content,
+.wdDropDown__content,
+.osDropDown__content {
+  margin-left: 30rem;
+  display: none; }
+
 .nav-icon__icon:not(:last-of-type) {
   margin-right: 7rem; }
 
@@ -160,8 +188,16 @@ body {
 .about-us-sec {
   position: absolute;
   top: 111.8rem;
-  width: 100%;
-  position: relative; }
+  width: 109.75%;
+  margin-left: -6.75rem;
+  height: -webkit-fill-available;
+  z-index: -50;
+  background-image: url("svg/waves-rec-1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 37.6rem 12.1rem 194.87rem 20.1rem; }
+  .about-us-sec:not(:last-of-type) {
+    margin-bottom: 6rem; }
 
 .message__btn {
   display: flex;
@@ -171,12 +207,21 @@ body {
     .message__btn {
       justify-content: initial; } }
 
-.svg-about-us {
-  position: absolute;
-  margin-left: -6.75rem;
-  width: 109%;
-  z-index: -50; }
+.content__item:not(:last-child) {
+  margin-bottom: 2.4rem; }
 
+.content__item--h2 {
+  margin-bottom: 1.2rem; }
+
+.content__item--p {
+  line-height: 100%; }
+
+.content__item--text {
+  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.4rem; }
+
+/**/
 .heading {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -205,6 +250,17 @@ body {
   -webkit-background-clip: text;
   color: transparent; }
 
+.paragraph {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 90%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.05em;
+  color: #000000; }
+
 .sub-heading {
   width: 47.8rem;
   height: 14.9rem;
@@ -223,3 +279,8 @@ body {
       height: calc(14.9rem * 1.5);
       width: calc(47.8rem * 1.5);
       line-height: 5.9rem; } }
+
+.ter-heading {
+  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.4rem; }
